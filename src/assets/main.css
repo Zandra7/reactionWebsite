@@ -1,0 +1,82 @@
+@import './base.css';
+
+body {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.Icon {
+  width: 20%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+                    "j a b c d e"
+                    "j f g h i e";
+  padding: 10px;
+}
+
+.emoji { grid-area: a; }
+
+.heart { grid-area: b; }
+
+.uparrow { grid-area: c; }
+
+.downarrow { grid-area: d; }
+
+.empty {grid-area: e;}
+
+.emojiNumber { grid-area: f; 
+  margin-left: 8%;}
+
+.heartNumber { grid-area: g; 
+  margin-left: 8%;}
+
+.uparrowNumber { grid-area: h; 
+  margin-left: 8%;}
+
+.downarrowNumber { grid-area: i; 
+  margin-left: 8%;}
+
+  .rooms {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #f1f1f1;
+    grid-area: j;
+    margin-top: -5%;  
+    
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 425;
+    
+  }
+  
+  li a.active {
+    background-color: #9fcbbb;
+    color: black;
+    outline: black;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(197, 197, 197);
+    color: white;
+
+  }
+
+  .lastReactions {
+    margin-left: 15%;
+  }
+  
+  .names {
+    list-style-type: none;
+  }
